@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>滬尾文青地圖</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+        <style type="text/css">
+            h1,h2,h3 {
+              animation-duration: 3s;
+              animation-name: slidein;
+            }
+            @keyframes slidein {
+            from {
+              padding-left: 100%;
+              width: 300%;
+            }
+
+            to {
+              padding-left: 0%;
+              width: 100%;
+            }
+        </style>
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html"><span class="avatar"><img src="images/coffee.jpg" alt="" /></span></a>
+						<h1>滬尾文青地圖</h1>
+                        <h2>You can find recommended place from this website if you wanna be a hipster.</h2>
+						<ul class="icons">
+							<li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon style2 fa-500px"><span class="label">500px</span></a></li>
+							<li><a href="#" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+						</ul>
+					</header>
+
+				<!-- Main -->
+					<section id="main">
+
+						<!-- Thumbnails -->
+							<section class="thumbnails">
+								<div>
+									<a href="cafe/cafe.html">
+										<img src="images/cafe.jpg" alt="" />
+										<h3>Café</h3>
+									</a>
+									<a href="apparel/apparel.html">
+										<img src="images/apparel.jpg" alt="" />
+										<h3>Apparel</h3>
+									</a>
+								</div>
+								<div>
+									<a href="patisserie/patisserie.html">
+										<img src="images/dessert.jpg" alt="" />
+										<h3>Patisserie</h3>
+									</a>
+									<a href="schedule/schedule.html">
+										<img src="images/schedule.jpg" alt="" />
+										<h3>Schedule</h3>
+									</a>
+								</div>
+								<div>
+									<a href="view/view.html">
+										<img src="images/view.jpg" alt="" />
+										<h3>view</h3>
+									</a>
+									<a href="#">
+										<img src="images/tamsui.jpg" alt="" />
+										<h3>Tamsui</h3>
+									</a>
+								</div>
+							</section>
+
+					</section>
+                    <form  id="formId" method="post" action="https://57f0627b.ngrok.io/message" target="id_iframe">
+                        <fieldset>
+                            <legend>Message</legend>
+                            Enter your name&nbsp;&nbsp;&nbsp;:<input type="text" name="name" size="10"><br/>
+                            Enter your E-mail&nbsp;&nbsp;&nbsp;:<input type="text" name="email" size="10"><br/>
+                            Talk to us&nbsp;&nbsp;&nbsp;:<input type="text" name="message" size="10"><br/>
+                            <input type="submit" value="Submit" onclick="subAlert()">&nbsp;<input type="reset" value="reset">
+                        </fieldset>
+                    </form>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p>&copy; 專題一期末作品</p>
+					</footer>
+                    <iframe id="id_iframe" name="id_iframe" style=""></iframe>
+
+			</div>
+
+		<!-- Scripts -->
+            <script type="text/javascript">
+                function subAlert() {
+                    alert("You've submitted!");
+                }
+            </script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
